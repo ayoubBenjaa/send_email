@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: system-ui;
+
+}
+body{
+    background-color: #3676dc;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    padding: 10px 0;
+}
+form{
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+form div{
+    justify-content: space-between;
+    display: flex;
+}
+form div div{
+    position: relative;
+}
+form div div input{
+    width: 130px;
+    padding: 4px 25px;
+    margin-top: 10px ;
+
+}
+
+form div div i{
+    font-size: 13px;
+    position: absolute;
+    margin: 20px 10px;
+    color: #666;
+}
+div textarea{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 25px;
+    border: solid 1.5px #3676dc;
+    border-radius: 2.5px;
+
+}
+#sendSection{
+    padding: 10px 50px 0 0;
+
+}
+#sendSection span{
+    display: none;
+    color: #3676dc;
+}
+#sendSection #btn{
+    height: 100%;
+    padding: 5px 20px;
+    background-color: #3676dc;
+    border: none;
+    color: #fff;
+    border-radius: 2.5px;
+}
+#textSection{
+    position: relative;
+}
+#textSection #msg{
+    padding: 20px 25px;
+}
+#textSection div{
+    position: absolute;
+    display: flex;
+    margin: 10px 5px;
+    color: #666;
+}

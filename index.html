@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <form action="#">
+        <h3>Send Us A Message!</h3>
+        <hr>
+        <div>
+            <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="username" name="name">
+                </div>
+                <div>
+                <i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="email" placeholder="email">
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa-brands fa-edge"></i>
+                    <input type="text" name="website" placeholder="website">
+                </div>
+                <div>
+                <i class="fa-solid fa-phone"></i>
+                    <input type="text" name="phone" placeholder="phone number">
+            </div>
+        </div>
+        <div id="textSection">
+            <div>
+                <label for="msg">Your message here</label>
+            </div>
+            <textarea name="msg" id="msg" name="msg"  rows="5"></textarea>
+        </div>
+        <div id="sendSection">
+            <button type="submit" id="btn">Send Message</button>
+            <span>Sending your message...</span>
+        </div>
+        
+    </form>
+    <script src="script.js"></script>
+     
+</body>
+</html>
