@@ -51,14 +51,18 @@ div textarea{
 }
 #sendSection{
     padding: 10px 50px 0 0;
+    display: flex;
+    align-items: center;
 
 }
 #sendSection span{
     display: none;
     color: #3676dc;
+    font-size: 13px;
 }
 #sendSection #btn{
     height: 100%;
+    margin: 0 10px 0 0;
     padding: 5px 20px;
     background-color: #3676dc;
     border: none;

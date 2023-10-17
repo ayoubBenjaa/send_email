@@ -1,49 +1,32 @@
-
 <?php
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $website = $_POST['website'];
-   $phone = $_POST['phone'];
-   $msg = $_POST['msg'];
 
+$name = $_POST["name"];
+$email = $_POST["email"];
+$website = $_POST["website"];
+$phone = $_POST["phone"];
+$msg = $_POST["msg"];
 
-if(!empty($email) && !empty($msg)){
-   if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "ayoubbenjaa642@gmail.com";
-      $subject = "From: $name <$email>";
-      $name = "Name: $name\nEmail: $email\nPhone $phone\nWebsite: $website\nmessage: $msg";
+if(!empty($msg) && !empty($email)){
+   if(filter_var($email,FILTER_VALIDATE_EMAIL)){
+      $reciever = "ayoubbenjaa642@gmail.com";
+      $subject = "Form: $name <$email>";
+      $body = "name: $name website: $website\nphone: $phone\nmessage: $msg\n";
       $sender = "From: $email";
-      if(mail($receiver,$subject,$body,$sender)){
-         echo "Your message has been sent";
-
+      if(mail($reciever,$subject,$body,$sender)){
+         echo "Your message has been sent successfully!";
       }else{
-         echo "Sorry, filed to send your message";
+         echo "Sorry you email field";
+
       }
    }
    else{
-      echo "Enter a valid email address!";
+      echo "Enter a validate email!";
    }
 }
 else{
-   echo "Email and password is required";
+   echo "Email and message are required!";
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 ?>
-
-
-
-
-
